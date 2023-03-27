@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
    
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!-- Mirrored from www.hackinthenorth.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 25 Mar 2023 08:54:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Vibhava</title>
-      <meta name="description" content="SOE Edufest">
+      <meta name="description" content="Hack in the North 5 Website.">
       <link rel="stylesheet" href="css/style-prev.css">
       <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
       <link rel="stylesheet" href="css/style.css">
@@ -16,33 +16,120 @@
       <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.3.1/css/all.css"
          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
       <link rel="stylesheet" href="fonts/CircularStdBold/font.css">
- 
-     
 
+      <!-- Facebook -->
+      <meta property="og:url" content="index.html" />
+      <meta property="og:type" content="article" />
+      <meta property="og:title" content="Hack In The North" />
+      <meta property="og:description" content="India's best student held hackathon" />
+      <meta property="og:image" content="images/logo_coloured_white_text.html" />
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:creator" content="Team HINT">
+      <meta name="twitter:site" content="index.html">
+      <meta name="twitter:title" content="Hack In The North - India's Biggest Student Hackathon">
+      <meta name="twitter:description" content="Hack in the North, a student-held hackathon in India will host it's fifth edition this March. We have invited a 
+         legion of over 1000 hackers over the past four years to collaborate, create and bring to life an idea, in 36 hours.">
+      <meta name="twitter:image:src" content="images/logo_coloured_white_text.html">
+      <meta name="twitter:image:width" content="312">
+      <meta name="twitter:image:height" content="141">
+      <link rel="stylesheet" href="css/owl.carousel.min.css" />
+      <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154644271-1"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag() { dataLayer.push(arguments); }
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-154644271-1');
+      </script>
+      <script src="../code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+         crossorigin="anonymous"></script>
 
       <style>
-      		.event {
-			display: inline-block;
-			margin: 20px;
-			width: 300px;
-			border: 1px solid #ddd;
-			padding: 10px;
-			text-align: center;
-		}
-		.event img {
-			max-width: 100%;
-			height: auto;
-		}
-		.event h2 {
-			font-size: 24px;
-			margin-top: 10px;
-			margin-bottom: 5px;
-		}
-		.event p {
-			font-size: 16px;
-			margin-top: 5px;
-			margin-bottom: 10px;
-		}
+      			/* Box Styles */
+/* Box Styles */
+.event-container {
+  display: flex;
+  justify-content: center;
+}
+
+.event-box {
+  width: 300px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.event-img {
+  width: 100%;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.event-title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.event-details {
+  font-size: 16px;
+  margin: 0 20px 10px;
+}
+
+.details-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.details-content {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 600px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: auto;
+}
+
+
+.close-button {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-button {
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px) {
+  .event-box {
+    width: 100%;
+  }
+}
+
          @font-face {
          font-family: 'CeraPro-black';
          src: url(fonts/CeraPro-Black.ttf) format("truetype");
@@ -254,14 +341,14 @@
                         SOE EduFest 
                      </h1>
                      <!-- <h2>1st Apr - 3rd Apr</h2> -->
-                     <img src="images/vibhava.png" class="we-back-img" alt="we are back">
+                     <img src="images/vibhava-LOGO-.png" class="we-back-img" alt="we are back">
                   </div>
                </div>
             </div>
          </div>
-         <img src="images/Landing/back.png" alt="" class="mountain" id="back" style="z-index: 1;">
+         <img src="images/Landing/back1.png" alt="" class="mountain" id="back" style="z-index: 1;" >
          <img src="images/Landing/mid.png" alt="" class="mountain" id="mid" style="z-index: 2;">
-         <img src="images/Landing/front.png" alt="" class="mountain" id="front" style="z-index: 4;">
+         <img src="images/Landing/front1.png" alt="" class="mountain" id="front" style="z-index: 4;">
       </div>
       <div class="about" id="about">
          <div id="test" style="width:30vw">
@@ -306,16 +393,11 @@
                   <br>
                </p>
                <div class="row text-center">
-                  <div style="z-index: 4;">
-                     <a class="dev dev-btn apply-button" data-hackathon-slug="hack-in-the-north" data-button-theme="dark-inverted"  href="" target="blank">Register Now</a>
-                  </div>
+              
                </div>
                <br> <br>
                <div class="row text-center">
-                  <div class="col-12" style="z-index: 5">
-                     <a class="dev dev-btn" href="" target="blank"><i class='fab fa-discord'
-                        style='font-size:24px;vertical-align: middle;'></i>&nbsp; under maintenence</a>
-                  </div>
+       
                </div>
             </div>
          </div>
@@ -536,218 +618,396 @@
                <h1 class="fancy_heading">EVENTS</h1>
                <h1 class="fancy_heading_shadow">EVENTS</h1>
             </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="AI the Magic Wand">
-                     <h2>AI the Magic Wand</h2>
-                     <p>A talk on the possibilities of AI, by Danwand N S.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="UI/UX Design using Figma">
-                     <h2>UI/UX Design using Figma</h2>
-                     <p>A workshop on designing interfaces, by Sindhu P R.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Engineering 101">
-                     <h2>Engineering 101</h2>
-                     <p>A talk on basic engineering principles, by Talha.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col">
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="3D Printing">
-                     <h2>3D Printing</h2>
-                     <p>A workshop on 3D printing, by Saqib.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="SolidWorks and CAD">
-                     <h2>SolidWorks and CAD</h2>
-                     <p>A workshop on designing with SolidWorks and CAD, by Sreehari M M.</p>
-                  </div>
-                  <div class="event">
-                     <img src="https://picsum.photos/300/200" alt="Blender">
-                     <h2>Blender</h2>
-                     <p>A workshop on 3D modeling with Blender, by Aftab and Sharooq.</p>
-                  </div>
-               </div>
-            </div>
 
+            <div class="event-container"> 
+               <div class="event-box"  style="background-image: url('images/ai.jpg')">
+               <h3 class="event-title">AI - your every day Magic Wand </h3>
+               <p class="event-details">01/04/2023 (3hr) </p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://linktr.ee/vibhava_SAECUSAT?utm_source=linktree_admin_share">Register Now</a>
+               <h3 class="event-title">AI - your every day Magic Wand </h3>
+               <p class="event-details">01/04/2023 (3hr) </p>
+               <p class="event-details">Seminar Hall, NLB</p>
+               <p class="event-details">Danwand N S</p>
+               <p class="event-description">Ever wanted a magic wand that could fulfill some of your wishes? Luckily, you can wish for anything under the stars with AI. AI can revolutionized our lives in many ways! Just think about it, with AI in healthcare, we can diagnose diseases more accurately, quickly, and even assist in surgical procedures! In finance, we can catch those pesky scammers and get personalized investment recommendations.
+               
+               In education, AI-powered tools can give us a personalized learning experience and help us get feedback on our work without a teacher ever needing to pick up a red pen! AI can even make our transportation more efficient and safe, with real-time traffic updates and accident predictions.
+               
+               And don't even get me started on entertainment! AI can help create more realistic and immersive video games and movies, and even suggest content that suits our viewing habits!
+               
+               Come join us on this exquisite session on Artificial Intelligence.</p>
+               <p class="event-requirements">Requirements:NA</p>
+               <p class="event-cost">Cost: NA</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/figma.jfif')">
+               <h3 class="event-title">UI/UX - The art of Figma.</h3>
+               <p class="event-details">31/03/2023, 01:45</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://linktr.ee/vibhava_SAECUSAT?utm_source=linktree_admin_share">Register Now</a>
+               <h3 class="event-title">UI/UX - The art of Figma.</h3>
+               <p class="event-details">31/03/2023, 01:45</p>
+               <p class="event-details">SDPK, NLB</p>
+               <p class="event-details">Sindhu P R</p>
+               <p class="event-description">Hey, my friend, let me tell you something that will change the way you design UI/UX. It's called Figma, and it's the ultimate tool for designers like you and I.
+               
+               Figma is a game-changer when it comes to UI/UX design. It's super intuitive and easy to use, so you can create stunning designs without hassle. Plus, you can work with your team in real-time, no matter where they are in the world.
+               
+               With Figma, you can easily create wireframes, prototypes, and high-fidelity designs all in one place. And the best part? It's all in the cloud, so you don't have to worry about downloading or installing anything.
+               Figma is the go-to tool for designers at big-shot companies like Microsoft, Uber, and Airbnb. So if you want to take your design game to the next level, Figma is the way to go.
+               
+               Trust me, once you start using Figma, you'll wonder how you ever managed without it.
+               
+               So come join us to learn to use this wonderful tool and create dope UI/UX designs!</p>
+               <p class="event-requirements">Requirements:PC </p>
+               <p class="event-cost">Cost: Rs 49/-</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/3d.jfif')">
+               <h3 class="event-title">3D Printing - print your imagination.</h3>
+               <p class="event-details">01/04/2023, 02:00</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://linktr.ee/vibhava_SAECUSAT?utm_source=linktree_admin_share">Register Now</a>
+               <h3 class="event-title">3D Printing - print your imagination.</h3>
+               <p class="event-details">01/04/2023, 02:00</p>
+               <p class="event-details">FABLAB CUSAT.</p>
+               <p class="event-details">Saqib </p>
+               <p class="event-description">Hey there! Have you heard about 3D printing? It's seriously the coolest thing since sliced bread!
+               
+               With 3D printing, you can design and create physical objects from digital designs. I mean, can you imagine creating your own products, parts, and prototypes from your living room? It's like having a factory at your fingertips!
+               
+               And let's talk about cost-effectiveness. 3D printing eliminates the need for expensive tooling and molds, which means you can save serious cash. Plus, it's super efficient since you can print only the parts you need, without wasting a single penny!
+               
+               Get ready to have your mind blown because 3D printing is the future of manufacturing. It's already being used in industries like aerospace, automotive, and healthcare to create complex and precise parts. And with advancements in technology, it's becoming more accessible and affordable tor everyone!
+               
+               But wait, there's more! 3D printing is also a fun and creative hobby. You can create unique designs and customize them to your liking. You can make toys, jewelry, home decor, and so much more. The possibilities are endless!
+               
+               So, do not miss out this event where you get to see the incredible things materialize in front of your eyes!</p>
+               <p class="event-requirements">Requirements:PC with Ultimaker Cura installed.</p>
+               <p class="event-cost">Cost: Rs 79/-</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/cad.jpg')">
+               <h3 class="event-title">CAD using SOLIDWORKS.</h3>
+               <p class="event-details">31/03/2023, 03:00</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://linktr.ee/vibhava_SAECUSAT?utm_source=linktree_admin_share">Register Now</a>
+               <h3 class="event-title">CAD using SOLIDWORKS.</h3>
+               <p class="event-details">31/03/2023, 03:00</p>
+               <p class="event-details">SDPK , NLB</p>
+               <p class="event-details">Sreehari M M</p>
+               <p class="event-description">Have you ever heard of CAD? It stands for Computer-Aided Design, and it's a really powerful tool that allows you to create 2D and 3D models on your computer. One of the most popular CAD software out there is SOLIDWORKS. It's used in industries like manufacturing, engineering, and product design.
+               
+               Let me give you an example. Imagine you want to design a new product - let's say a bicycle. With SOLIDWORKS, you can create a 3D model of the bike with all its parts and components. You can even test it out virtually to see how it performs before you even build it! That's the power of SolidWorks! 
+               
+               But it doesn't stop there. SOLIDWORKS also has amazing simulation capabilities. This means you can test your product design in various conditions like temperature, stress, and load capacity. You can even see how it would react in a crash or collision! This feature alone can save you a ton of time and money.
+               
+               And the best part? SOLIDWORKS allows you to create assemblies. This means you can design multiple parts that fit together perfectly, creating a complete product design. So, you can design not just the bike, but also the wheels, pedals, handlebars, and more - all in one software!
+               
+               If you're interested in a career in manufacturing, engineering, or product design, then learning SolidWorks is a must! It's a highly sought-after skill that can open up new opportunities for you. You can work for companies that use SolidWorks in their design process or even start your own business designing and creating your own products.
+               
+               Join us in this workshop to give you a glimpse of what SOLIDWORKS is actually capable of!</p>
+               <p class="event-requirements">Requirements:PC with SOLIDWORKS installed (If needed ask for the software at  the number provided).</p>
+               <p class="event-cost">Cost: Rs 49/-</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/blender.jpg')">
+               <h3 class="event-title">Blender - Designer of 3D realm </h3>
+               <p class="event-details">01/04/2023, 02:45</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://linktr.ee/vibhava_SAECUSAT?utm_source=linktree_admin_share">Register Now</a>
+               <h3 class="event-title">Blender - Designer of 3D realm </h3>
+               <p class="event-details">01/04/2023, 02:45</p>
+               <p class="event-details">SDPK, NLB</p>
+               <p class="event-details">Aftab and Sharooq.</p>
+               <p class="event-description">Yo, check it out - Blender is a dope 3D design software. It's used by artists, designers, and game developers to make some sick 3D graphics and animations.
+               
+               With Blender, you can create some crazy models using techniques like sculpting and vertex modeling. And you can add some fresh textures to your models too.The lighting and rendering features in Blender are tight. You can create some realistic lighting and effects that make your 3D scenes look straight-up dope. And there's a bunch of different rendering engines you can use too. And the animation tools in Blender are off the chain. You can create some crazy animations using keyframe animation and physics simulations. Plus, you can even customize Blender using scripts and add-ons.
+               
+               So if you're looking to get into the 3D realm, Blender is definitely the way to go. It's got everything you need to make some fly 3D designs.</p>    
+               <p class="event-requirements">Requirements:PC</p>
+               <p class="event-cost">Cost: Rs 49/-</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/python.jpg')">
+               <h3 class="event-title">Python workshop</h3>
+               <p class="event-details">31/04/2023, 02:45</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://linktr.ee/vibhava_SAECUSAT?utm_source=linktree_admin_share">Register Now</a>
+               <h3 class="event-title">Python workshop</h3>
+               <p class="event-details">31/04/2023, 02:45</p>
+               <p class="event-details">SDPK, NLB</p>
+               <p class="event-details">Sunith V S</p>
+               <p class="event-description">Yo, yo, listen up - a Python workshop is where you can learn all about Python programming. Python is a sick programming language that you can use for web development, data analysis, machine learning, and more.
+               
+               You'll learn about all kinds of stuff, depending on how much you already know. You could learn the basics of Python, or how to use it to make dope web apps. You could learn how to analyze data using Python or even how to build machine learning models.
+               
+               Lucky for you our session is levelled for a beginner and will surely take you to advanced levels. Level Top G!</p>
+               <p class="event-requirements">Requirements:PC</p>
+               <p class="event-cost">Cost: Rs 49/-</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/buggy.jpg')">
+               <h3 class="event-title">Build what you ride</h3>
+               <p class="event-details">01/04/2023, 02:30</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://linktr.ee/vibhava_SAECUSAT?utm_source=linktree_admin_share">Register Now</a>
+               <h3 class="event-title">Build what you ride</h3>
+               <p class="event-details">01/04/2023, 02:30</p>
+               <p class="event-details">SF Seminar Hall </p>
+               <p class="event-details">Anand K Vinu</p>
+               <p class="event-description">Everyone asks where is BlackRumble, no one asks how is BlackRumble?
+               
+               And here we are revealing all the secrets behind a car built by our guy Anand all from the scratch. From ideation to making a 3D model to making it run on streets, all covered under a masterclass followed with a demo of the car?!
+               
+               What are you waiting for? Register? Registerr!!</p>
+               <p class="event-requirements">Requirements:NA</p>
+               <p class="event-cost">Cost: NA</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/worldskill.jfif')">
+               <h3 class="event-title">My WorldSkills Journey</h3>
+               <p class="event-details">1/4/2023 2:00</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://linktr.ee/vibhava_SAECUSAT?utm_source=linktree_admin_share">Register Now</a>
+               <h3 class="event-title">My WorldSkills Journey</h3>
+               <p class="event-details">1/4/2023 2:00</p>
+               <p class="event-details">SF Seminar Hall</p>
+               <p class="event-details">Mohammed Siyad</p>
+               <p class="event-description">From a small town in Kerala to France, a journey that is inspiring and enthralling, all at once.
+               
+               Join us on the International WorldSkills journey of Muhammed Siyad who is a computer engineering student with a passion for robotics, coding, and electronics. He began his journey in robotics in 8th grade and has since gone on to represent India in the World Skills Mobile Robotics Competition, where he won a Medallion of Excellence award with a 4th rank (CAN YOU BELIEVE IT?!). In addition to this achievement, he has also won several national and state-level awards in his field.
+               
+               Join us for a wonderful session on not so small town boy in a big arcade!</p>
+               <p class="event-requirements">Requirements:NA</p>
+               <p class="event-cost">Cost: NA</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/eng.jpg')">
+               <h3 class="event-title">Engineering 101</h3>
+               <p class="event-details">31/03/2023 10:15 1hr45min</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="Nizamuddin - 9048776501, Mahesh - +91Â 95447Â 29738">Register Now</a>
+               <h3 class="event-title">Engineering 101</h3>
+               <p class="event-details">31/03/2023 10:15 1hr45min</p>
+               <p class="event-details">Placement Cell</p>
+               <p class="event-details">Md Talha Ateeque</p>
+               <p class="event-description">Just how Ted Mosby loves Architecture, our guy Talha shares the same passion for engineering. Throughout his B.Tech life, he has achieved and accomplished a lot of things, seriously ALOT!
+               
+               Join us on this session where he'll be talking and breaking down the B.Tech Matrix and revealing his learnings on "How to get internships ?", "How to do projects ?" and a lot more  dilemmatic questions which boggles your mind.
+               
+               Highly recommended to all struggling B.Tech students!</p>
+               <p class="event-requirements">Requirements:NA</p>
+               <p class="event-cost">Cost: NA</p>
+               <p class="event-contact">Contact: Nizamuddin - 9048776501
+               Mahesh - 9544729738</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/planet.jpg')">
+               <h3 class="event-title">Mini Planetarium</h3>
+               <p class="event-details">Open throughout the event</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="no registration">Register Now</a>
+               <h3 class="event-title">Mini Planetarium</h3>
+               <p class="event-details">Open throughout the event</p>
+               <p class="event-details">space in placement hall infront of library or at the entrance of IT block</p>
+               <p class="event-details">SEDS CUSAT</p>
+               <p class="event-description">Fan of space? Well come to our mini planetarium for a view of the cosmos.
+               
+               A mini planetarium is a small-scale version of a planetarium in the shape of a half dome built using PVC pipes that can be used to display a simulated night sky and astronomical events. It has a height of about 3.5mtr and a radius of 2.5mtr
+               
+               It's open for everyone for free so why hesitate?</p>
+               <p class="event-requirements">Requirements:2 Ladders during the time of construction</p>
+               <p class="event-cost">Cost: no</p>
+               <p class="event-contact">Contact: Joyal Kusmos - 8078050922
+               Niranjan K - 9995683799</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/stat.jpg')">
+               <h3 class="event-title">Satellite Exhibition</h3>
+               <p class="event-details">Open throughout the event</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="OPEN FOR ALL">Register Now</a>
+               <h3 class="event-title">Satellite Exhibition</h3>
+               <p class="event-details">Open throughout the event</p>
+               <p class="event-details">PLACEMENT HALL</p>
+               <p class="event-details">SEDS CUSAT</p>
+               <p class="event-description">Step into the world of Indian Space History with our Satellite Exhibition, and explore the major milestones in India's space exploration journey from its first successful satellite launch in 1975 to the present day. Don't miss this rare chance to witness the amazing achievements of India's space program.
+               
+               The satellite still model exhibition of the following satellites: aryabhatta, moonlander, chandrayaan and mangalyaan. Students can reach out to the stations to know more about these satellites
+               
+               All satellite enthusiats are encouraged to come join us!</p>
+               <p class="event-requirements">Requirements:NA</p>
+               <p class="event-cost">Cost: NO</p>
+               <p class="event-contact">Contact: Joyal Kusmos - 8078050922
+               Niranjan K - 9995683799</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/isro.jpg')">
+               <h3 class="event-title">Walk through Indian Space History</h3>
+               <p class="event-details">31/03/2023 4:00 3HRS</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="OPEN FOR ALL">Register Now</a>
+               <h3 class="event-title">Walk through Indian Space History</h3>
+               <p class="event-details">31/03/2023 4:00 3HRS</p>
+               <p class="event-details">placement hall</p>
+               <p class="event-details">SEDS CUSAT</p>
+               <p class="event-description">India has a rich history in space exploration and research, starting from its first successful satellite launch in 1975. Here's a brief walk through all the major events that has happened in the Indian space history.
+               
+               If you are a history buff and a astrophile, you can't miss out on this spectacular oppurtunity.</p>
+               <p class="event-requirements">Requirements:NA</p>
+               <p class="event-cost">Cost: no</p>
+               <p class="event-contact">Contact: Joyal Kusmos - 8078050922
+               Niranjan K - 9995683799</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/escape.jpg')">
+               <h3 class="event-title">Escape Room</h3>
+               <p class="event-details">31/03/2023 and 1/04/2023 48 hours</p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://forms.gle/1xWfRGKn5u5Nwjks7">Register Now</a>
+               <h3 class="event-title">Escape Room</h3>
+               <p class="event-details">31/03/2023 and 1/04/2023 48 hours</p>
+               <p class="event-details">Not yet Decided</p>
+               <p class="event-details">Anamik E</p>
+               <p class="event-description">Prepare yourself for an unparalleled and never-before-seen Escape Room experience that will test the limits of your courage and bravery! This is not your average Escape Room, but an intense and terrifying adventure that promises to be the worst nightmare you've ever witnessed while awake. Our bespoke, true, authentic, and real experience will deliver a surge of trauma that will leave you questioning what is real and what is not.
+               
+               CAUTION WARNING: Once you enter this lonely, dark room, be warned that you may experience intense, visible and raw fear. It is not recommended for those faint of heart and pregnant women.
+               
+               This is something that you wish you could have experienced before, but never had the chance to. Now, the time has come to confront this malicious, magnificent, and creative space. Can you escape the terror that awaits you within the walls of our Escape Room? Only the brave and daring will be able to make it out alive.
+               
+               Instructions:
+               - No of team members must be restricted to 4
+               - Time duration will be 15 minutes
+               - Cash prize will be provided for the group who escape this terrifying place with the least time only.
+               - UPI acquinb@fbl
+               Accept this challenge and break the mystery through your escape...if you dare!</p>
+               <p class="event-requirements">Requirements:NA</p>
+               <p class="event-cost">Cost: 50 Rs</p>
+               <p class="event-contact">Contact: Acquin - 9061071530
+               Vishnuram N - 8547504919 </p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
+                <div class="event-container">
+               <div class="event-box"  style="background-image: url('images/basic.jpg')">
+               <h3 class="event-title">SUSRUSHA </h3>
+               <p class="event-details">31/03/2023 , 11 AM - 1 PM , HOUR : 2 </p>
+               <p class="event-details"><a href="#" class="details-button">More details</a></p>
+               <div class="details-popup" id="details-popup">
+               <div class="details-content" style="background-image: url('common.jpg')">
+               <a class="register-button" href="https://forms.gle/xUuuMfRHU9oseH647">Register Now</a>
+               <h3 class="event-title">SUSRUSHA </h3>
+               <p class="event-details">31/03/2023 , 11 AM - 1 PM , HOUR : 2 </p>
+               <p class="event-details">SF  Seminar Hall</p>
+               <p class="event-details">Dr. Hanish (Aluva District Hospital)</p>
+               <p class="event-description">Join us for "SUSRUSHA", an essential Basic Life Training and Demonstration program designed to equip individuals with the necessary knowledge and skills to be better prepared in handling emergency situations in their day-to-day life.
+               
+               During this program, participants will be trained in various aspects of basic life training, including CPR, first aid, and emergency response techniques. You will learn how to assess and respond to emergency situations, provide basic life support, and communicate effectively with emergency services.
+               
+               Don't miss this chance to invest in your own safety and the safety of those around you. Register now for "SUSRUSHA" and take the first step towards being a better-prepared individual in emergency situations.</p>
+               <p class="event-requirements">Requirements:NA</p>
+               <p class="event-cost">Cost: No</p>
+               <p class="event-contact">Contact: Gokul - 9446146487
+               Jishnu- 8590153856</p>
+               <a href="#" class="close-button">Close</a>
+                </div>
+               </div>
+               </div>
+               </div>
              
-
 
          </div>
       </div>
@@ -1001,7 +1261,7 @@
                </div>
             </div>
          </div>
-         <img src="images/Animation/background_dotted_line.svg" alt="" class="faq-line">
+         <img src="images/Sponsor_us/background_dotted_line.svg" alt="" class="faq-line">
       </div>
 
 
@@ -1092,13 +1352,25 @@
          });
       </script>
       <script>
-         // let info = document.getElementById("closed");
-         // let now = new Date();
-         // let regDate = new Date(2020, 02, 8, 12, 00, 00);
-         
-         // if (now >= regDate) {
-         //   info.textContent = "Registrations are closed!";
-         // }
+const detailsButton = document.querySelectorAll('.details-button');
+const closeButton = document.querySelectorAll('.close-button');
+const detailsPopup = document.querySelectorAll('.details-popup');
+
+for (let i = 0; i < detailsButton.length; i++) {
+  detailsButton[i].addEventListener('click', function() {
+    detailsPopup[i].style.display = 'block';
+  });
+
+  closeButton[i].addEventListener('click', function() {
+    detailsPopup[i].style.display = 'none';
+  });
+
+  window.addEventListener('click', function(event) {
+    if (event.target == detailsPopup[i]) {
+      detailsPopup[i].style.display = 'none';
+    }
+  });
+}
       </script>
       <script>
          var landing = document.querySelector('.landing');
