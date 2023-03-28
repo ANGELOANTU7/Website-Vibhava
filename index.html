@@ -1426,7 +1426,7 @@
                   <a class="register-button" href="https://forms.gle/1xWfRGKn5u5Nwjks7">Register Now</a>
                   <h3 class="event-title">Ready  Set  Startup How to Launch a Successful Startup</h3>
                   <p class="event-details">31/03/23 (7:0:0)</p>
-                  <p class="event-details">Not yet Decided</p>
+                  <p class="event-details">Software Block</p>
                   <p class="event-details">Salman Faris</p>
                   <p class="event-description">Have you ever looked at a successful company and wondered how they did it?
 
@@ -2049,12 +2049,25 @@
       <script>
       var count = 0;
       var counter = document.getElementById("counter");
-      var interval = setInterval(function() {
-        counter.innerHTML = ++count;
-        if (count === 33) {
-          clearInterval(interval);
+      var counterContainer = document.getElementById("counter-container");
+      var options = {
+        rootMargin: "0px",
+        threshold: 0.5
+      };
+      var observer = new IntersectionObserver(function(entries, observer) {
+        if (entries[0].isIntersecting) {
+          var interval = setInterval(function() {
+            counter.innerHTML = ++count;
+            if (count === 33) {
+              clearInterval(interval);
+            }
+          }, 100);
+          observer.unobserve(entries[0].target);
         }
-      }, 100);
+      }, options);
+      observer.observe(counterContainer);
+      counterContainer.style.opacity = 1;
+    </script>
        </script>
 
       <script>
