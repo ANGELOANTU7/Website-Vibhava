@@ -53,21 +53,26 @@
 /* Box Styles */
 
 #preloader {
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: #000;
-			z-index: 9999;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			flex-direction: column;
-			opacity: 1;
-			transition: opacity 1s ease-in-out;
-		}
-      .preloader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+#preloader.collapse {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.preloader-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,6 +91,7 @@
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
 @keyframes breathing {
   0% {
     transform: scale(1);
@@ -105,11 +111,8 @@
   text-align: center;
   animation: breathing 1s ease-in-out infinite;
 }
-		#preloader.fadeout {
-			opacity: 0;
-			transition-delay: 1s;
-		}
-.event-container {
+
+      .event-container {
   display: flex;
   justify-content: center;
 }
@@ -183,8 +186,11 @@
   padding: 10px 20px;
   text-decoration: none;
 }
-
-
+@media only screen and (max-width: 768px) {
+  .event-box {
+    width: 100%;
+  }
+}
 
 
 
@@ -271,8 +277,9 @@
   
    <div class="preloader-container">
       <div class="preloader-spinner"></div>
-      <h2>Best viewed in Mobile</h2>
+      <h5>Best viewed in Mobile</h5>
     </div>
+
  </div>
  
       
@@ -1501,7 +1508,28 @@
             </div>
          </div>
       </div>
+      <script>
 
+         const detailsButton = document.querySelectorAll('.details-button');
+         const closeButton = document.querySelectorAll('.close-button');
+         const detailsPopup = document.querySelectorAll('.details-popup');
+         
+         for (let i = 0; i < detailsButton.length; i++) {
+           detailsButton[i].addEventListener('click', function() {
+             detailsPopup[i].style.display = 'block';
+           });
+         
+           closeButton[i].addEventListener('click', function() {
+             detailsPopup[i].style.display = 'none';
+           });
+         
+           window.addEventListener('click', function(event) {
+             if (event.target == detailsPopup[i]) {
+               detailsPopup[i].style.display = 'none';
+             }
+           });
+         }
+               </script>
       <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
          var path = document.querySelector('.path');
          var ball = document.querySelector('.ball');
@@ -1552,31 +1580,13 @@
          });
       </script>
       <script>
-		window.addEventListener('load', function(){
-			setTimeout(function(){
-				document.querySelector('#preloader').classList.add('fadeout');
-			}, 1000);
-		});
-const detailsButton = document.querySelectorAll('.details-button');
-const closeButton = document.querySelectorAll('.close-button');
-const detailsPopup = document.querySelectorAll('.details-popup');
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    document.querySelector('#preloader').classList.add('collapse');
+  }, 1000);
+});
+   </script>
 
-for (let i = 0; i < detailsButton.length; i++) {
-  detailsButton[i].addEventListener('click', function() {
-    detailsPopup[i].style.display = 'block';
-  });
-
-  closeButton[i].addEventListener('click', function() {
-    detailsPopup[i].style.display = 'none';
-  });
-
-  window.addEventListener('click', function(event) {
-    if (event.target == detailsPopup[i]) {
-      detailsPopup[i].style.display = 'none';
-    }
-  });
-}
-      </script>
       <script>
          var landing = document.querySelector('.landing');
          var halfWindowWidth = Math.ceil(window.innerWidth / 2);
